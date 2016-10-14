@@ -1,0 +1,21 @@
+<h1>Login</h1>
+<title>Login</title> 
+
+
+<%= form_for :user, url: users_login_create_path do |f| %>
+
+	<p>
+		<%= f.label :username %><br>
+		<%= f.text_field :username %>
+	</p>	
+
+	<p>
+		<%= f.label :password %><br>
+		<%= f.text_field :password %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
+
+<td><%= link_to 'Sign Up', new_user_path %></td>
